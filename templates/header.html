@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Touch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio Web de la tienda Touch">
+    <meta name="author" content="Juan Garcia">
+    <meta name="keywords" content="celulares,accesorios,teclados">
+    {% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css_bootstrap/bootstrap.min.css') }}">
+
+    {% endblock %}
+    
+    {% block jquery %}
+    <script src="{{ url_for('static', filename= 'js_bootstrap/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js_bootstrap/bootstrap.min.js') }}"></script>
+    {% endblock %}
+</head>
+<body>
+    <!--Header-->
+    <div id="cabezera">
+        <t1 id="logo">Touch</t1>
+    </div>
+
+    {% block body %}
+
+    {% block javascript %}
+    {% endblock %}
+    {% endblock %}
+
+</body>
+</html>
